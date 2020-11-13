@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comm_margin_size_20"
+        android:layout_marginRight="@dimen/comm_margin_size_20"
+        android:layout_marginTop="@dimen/comm_margin_size_10"
+        android:layout_marginBottom="@dimen/comm_margin_size_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ocr_take_photo_top_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拍摄人像面"
+            android:textColor="@color/ocr_black_text"
+            android:textSize="@dimen/comm_normal_mid_font_size" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/ocr_take_photo_require_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拍摄要求"
+            android:textColor="#FF6A00"
+            android:textSize="@dimen/comm_normal_font_size" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginLeft="@dimen/comm_margin_size_60"
+        android:layout_marginRight="@dimen/comm_margin_size_60"
+        android:layout_marginBottom="@dimen/comm_margin_size_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ocr_take_photo_img_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ocr_idcard_front_default" />
+
+        <ImageView
+            android:id="@+id/ocr_take_photo_take_button"
+            android:layout_width="@dimen/comm_margin_size_60"
+            android:layout_height="@dimen/comm_margin_size_60"
+            android:scaleType="fitStart"
+            android:layout_gravity="center"
+            android:src="@mipmap/ocr_take_photo_icon" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/ocr_take_photo_bottom_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/comm_margin_size_10"
+        android:gravity="center"
+        android:text="证件人面像"
+        android:textColor="@color/ocr_gray_text"
+        android:textSize="@dimen/comm_normal_small_font_size" />
+
+</LinearLayout>

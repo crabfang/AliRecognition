@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ocr_take_photo_require_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.25"
+        android:background="@color/ocr_black_text" />
+
+    <LinearLayout
+        android:background="@drawable/alert_round_shape"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/comm_margin_size_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="识别超时"
+            android:textColor="@color/ocr_black_text"
+            android:textSize="@dimen/comm_title_font_size"
+            android:layout_margin="@dimen/comm_margin_size_20"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="网络连接超时，请重新识别"
+            android:textColor="#888888"
+            android:textSize="@dimen/comm_normal_mid_font_size"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/comm_margin_size_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/ocr_background_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dip" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/comm_margin_size_20"
+            android:layout_marginRight="@dimen/comm_margin_size_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ocr_alert_exit_identity"
+                android:layout_weight="1"
+                android:text="退出"
+                android:textColor="@color/ocr_black_text"
+                android:textSize="@dimen/comm_title_font_size"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/comm_margin_size_10"
+                android:layout_marginBottom="@dimen/comm_margin_size_10"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:background="@color/ocr_background_gray"
+                android:layout_width="1dip"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/ocr_alert_retry_identitiy"
+                android:layout_weight="1"
+                android:text="重新识别"
+                android:textColor="@color/ocr_orange"
+                android:textSize="@dimen/comm_title_font_size"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/comm_margin_size_10"
+                android:layout_marginBottom="@dimen/comm_margin_size_10"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

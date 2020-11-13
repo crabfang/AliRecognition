@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/screen_main_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toyger_circle_background"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/toyger_main_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_gravity="end"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:background="@mipmap/ocr_black_close" />
+
+            <FrameLayout
+                android:id="@+id/toger_main_scan_frame"
+                android:layout_width="@dimen/toyger_circle_surfaceview_width"
+                android:layout_height="@dimen/toyger_circle_surfaceview_height"
+                android:layout_gravity="center">
+
+                <com.aliyun.aliyunface.camera.CameraSurfaceView
+                    android:id="@+id/cameraSurfaceView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/messageCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="@dimen/toyger_circle_tips_margin_top"
+                    android:background="#66000000"
+                    android:gravity="center"
+                    android:text="@string/face_init_text"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/faceAvatar"
+                    android:layout_width="@dimen/toyger_circle_surfaceview_width"
+                    android:layout_height="@dimen/toyger_circle_surfaceview_width"
+                    android:layout_marginTop="@dimen/toyger_circle_tips_margin_top"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" />
+
+                <com.aliyun.aliyunface.ui.widget.CircleHoleView
+                    android:id="@+id/toyger_face_circle_hole_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@color/toyger_circle_background"
+                    app:holeHeight="@dimen/toyger_circle_surfaceview_width"
+                    app:holeLeft="0dp"
+                    app:holeTop="@dimen/toyger_circle_tips_margin_top"
+                    app:holeWidth="@dimen/toyger_circle_surfaceview_width" />
+
+                <com.aliyun.aliyunface.ui.widget.RoundProgressBar
+                    android:id="@+id/scan_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/toyger_circle_tips_margin_top"
+                    app:zface_end_angle="60"
+                    app:zface_gradient_color_end="@color/toyger_circle_progress_foreground"
+                    app:zface_gradient_color_start="@color/toyger_circle_progress_background"
+                    app:zface_max="100"
+                    app:zface_progress_shader="true"
+                    app:zface_round_color="@color/toyger_circle_progress_background"
+                    app:zface_round_progress_color="@color/toyger_circle_progress_foreground"
+                    app:zface_round_width="5dp"
+                    app:zface_start_angle="-240"
+                    app:zface_text_is_displayable="false" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/face_comm_tips_text"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/close_toyger_btn"
+            android:layout_gravity="end"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:background="#00FFFFFF"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/layout_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <com.aliyun.aliyunface.ui.ToygerWebView
+            android:id="@+id/guid_web_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <com.aliyun.aliyunface.ui.overlay.CommAlertOverlay
+            android:id="@+id/message_box_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ocr_identity_error_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.25"
+        android:background="@color/ocr_black_text" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/comm_margin_size_30"
+        android:layout_marginRight="@dimen/comm_margin_size_30"
+        android:padding="@dimen/comm_margin_size_10"
+        android:background="@drawable/alert_round_shape"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/comm_margin_size_20"
+                android:text="识别失败"
+                android:textColor="@color/ocr_black_text"
+                android:textSize="@dimen/comm_title_font_size" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/ocr_identity_error_page_close"
+                android:layout_width="@dimen/comm_margin_size_60"
+                android:layout_height="@dimen/comm_margin_size_60"
+                android:layout_gravity="right"
+                android:src="@mipmap/comm_ocr_close" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_ocr_identity_take_photo_require"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@mipmap/ocr_take_photo_require" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/comm_margin_size_10"
+            android:gravity="center_horizontal"
+            android:text="证件图像未符合要求"
+            android:textColor="@color/ocr_black_text"
+            android:textSize="@dimen/comm_title_font_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="请按要求拍摄本人有效身份证"
+            android:textColor="@color/ocr_gray_text"
+            android:textSize="@dimen/comm_normal_small_font_size" />
+
+        <View
+            android:alpha="0.3"
+            android:background="#191F25"
+            android:layout_marginTop="@dimen/comm_margin_size_10"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"/>
+
+        <TextView
+            android:id="@+id/ocr_identity_error_retry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/comm_margin_size_10"
+            android:gravity="center_horizontal"
+            android:text="重新拍摄"
+            android:textColor="@color/ocr_orange"
+            android:textSize="@dimen/comm_title_font_size" />
+
+    </LinearLayout>
+
+</FrameLayout>

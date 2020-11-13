@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ocr_white"
+    tools:context=".ui.OcrGuideBaseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--引入自定义ActionBar-->
+        <include layout="@layout/ocr_section_layout_action_bar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/ocr_background_gray" />
+
+        <!--引入进度指示器布局-->
+        <com.aliyun.aliyunface.ui.widget.OcrGuideStageView
+            android:id="@+id/ocr_guide_stage_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dip"
+            android:background="@color/ocr_background_gray" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_weight="1"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--引入中间拍照区域-->
+                    <include layout="@layout/ocr_section_layout_photo" />
+
+                    <include layout="@layout/ocr_section_layout_idcard_infos" />
+
+                    <View
+                        android:layout_weight="1"
+                        android:background="@color/ocr_background_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"/>
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dip"
+                android:layout_gravity="bottom"
+                android:background="#FFFFFF">
+
+                <Button
+                    android:id="@+id/ocr_comm_next_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comm_margin_size_20"
+                    android:layout_marginTop="@dimen/comm_margin_size_10"
+                    android:layout_marginRight="@dimen/comm_margin_size_20"
+                    android:layout_marginBottom="@dimen/comm_margin_size_10"
+                    android:background="#FF6A00"
+                    android:gravity="center"
+                    android:enabled="false"
+                    android:text="下一步"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/comm_normal_mid_font_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.aliyun.aliyunface.ui.overlay.OcrPhotoRequireOverlay
+        android:id="@+id/ocr_take_photo_require_overlay"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.aliyun.aliyunface.ui.overlay.OcrLoadingOverlay
+        android:id="@+id/ocr_loading_overlay"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.aliyun.aliyunface.ui.overlay.OcrIdentityNetErrorOverlay
+        android:id="@+id/ocr_identity_net_error_overlay"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.aliyun.aliyunface.ui.overlay.OcrIdentityErrorOverlay
+        android:id="@+id/ocr_identity_error_overlay"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.aliyun.aliyunface.ui.overlay.CommAlertOverlay
+        android:id="@+id/ocr_exit_alert_overlay"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.OcrTakePhotoActivity">
+
+    <FrameLayout
+        android:id="@+id/take_photo_screen_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.aliyun.aliyunface.camera.CameraSurfaceView
+            android:id="@+id/ocr_take_photo_surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dip" />
+
+        <ImageView
+            android:id="@+id/ocr_taken_picture_img"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.aliyun.aliyunface.ui.widget.RectMaskView
+            android:id="@+id/ocr_take_photo_rect_mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.8"
+            android:src="@color/ocr_black_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/comm_margin_size_30"
+            android:layout_marginTop="@dimen/comm_margin_size_30"
+            android:layout_marginRight="@dimen/comm_margin_size_30"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ocr_close_shark_img"
+                    android:layout_width="@dimen/comm_ocr_button_size"
+                    android:layout_height="@dimen/comm_ocr_button_size"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitStart"
+                    android:src="@mipmap/ocr_close_shark" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="@dimen/comm_ocr_button_small_size"
+                    android:layout_height="@dimen/comm_ocr_button_small_size"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitStart"
+                    android:src="@mipmap/ocr_photo_close" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="3" />
+
+            <TextView
+                android:id="@+id/ocr_take_photo_rect_frame_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/comm_margin_size_20"
+                android:gravity="center_horizontal"
+                android:text="请将身份证置于框内拍摄"
+                android:textColor="@color/ocr_white"
+                android:textSize="@dimen/comm_normal_font_size" />
+
+            <ImageView
+                android:id="@+id/ocr_photo_rect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ocr_photo_rect" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="3" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ocr_do_take_picture"
+                    android:layout_width="@dimen/comm_ocr_button_large_size"
+                    android:layout_height="@dimen/comm_ocr_button_large_size"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitStart"
+                    android:src="@mipmap/ocr_do_take_picture" />
+
+                <LinearLayout
+                    android:visibility="invisible"
+                    android:id="@+id/ocr_take_photo_button_retry_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/ocr_take_photo_retry"
+                        android:layout_width="@dimen/comm_ocr_button_large_size"
+                        android:layout_height="@dimen/comm_ocr_button_large_size"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitStart"
+                        android:src="@mipmap/ocr_take_photo_retry" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/ocr_take_photo_confirm"
+                        android:layout_width="@dimen/comm_ocr_button_large_size"
+                        android:layout_height="@dimen/comm_ocr_button_large_size"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitStart"
+                        android:src="@mipmap/ocr_take_photo_confirm" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="1dip"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/ocr_take_photo_shark"
+                android:layout_width="@dimen/comm_margin_size_80"
+                android:layout_height="@dimen/comm_margin_size_80" />
+
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="1dip" />
+
+            <View
+                android:id="@+id/ocr_take_photo_close"
+                android:layout_width="@dimen/comm_margin_size_80"
+                android:layout_height="@dimen/comm_margin_size_80" />
+
+        </LinearLayout>
+
+        <com.aliyun.aliyunface.ui.overlay.CommAlertOverlay
+            android:id="@+id/ocr_exit_alert_overlay"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

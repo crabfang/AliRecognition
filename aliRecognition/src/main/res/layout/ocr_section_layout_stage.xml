@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/comm_margin_size_20"
+    android:background="@color/ocr_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:id="@+id/ocr_stage_line_left"
+            android:layout_width="0dip"
+            android:layout_height="2dip"
+            android:layout_weight="2"
+            android:background="@color/ocr_gray_line" />
+
+        <View
+            android:id="@+id/ocr_stage_line_right"
+            android:layout_width="0dip"
+            android:layout_height="2dip"
+            android:layout_weight="2"
+            android:background="@color/ocr_gray_line" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/img_stage_idcard_front"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:background="@mipmap/comm_stage_icon"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txt_stage_idcard_front"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:gravity="center"
+                android:text="人像面"
+                android:textSize="@dimen/comm_normal_font_size"
+                android:textColor="@color/ocr_black_text" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="2dip"
+            android:layout_weight="2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/img_stage_idcard_back"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:background="@mipmap/comm_stage_gray_icon"
+                android:gravity="center"
+                android:text="2"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txt_stage_idcard_back"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:gravity="center"
+                android:text="国徽面"
+                android:textSize="@dimen/comm_normal_font_size"
+                android:textColor="@color/ocr_gray_text" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="2dip"
+            android:layout_weight="2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/img_stage_livness"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:background="@mipmap/comm_stage_gray_icon"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="3"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txt_stage_livness"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:gravity="center"
+                android:text="刷脸认证"
+                android:textSize="@dimen/comm_normal_font_size"
+                android:textColor="@color/ocr_gray_text" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+    </LinearLayout>
+</FrameLayout>

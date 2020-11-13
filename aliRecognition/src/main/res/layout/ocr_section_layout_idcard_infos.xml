@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ocr_idcard_infos_page"
+    android:orientation="vertical"
+    android:visibility="invisible"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:background="@color/ocr_background_gray"
+        android:text="请确认信息，若有误请点击修改"
+        android:textColor="#555555"
+        android:textSize="@dimen/comm_normal_small_font_size"
+        android:paddingLeft="@dimen/comm_margin_size_20"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dip" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+
+        <TextView
+            android:layout_weight="1"
+            android:textSize="@dimen/comm_normal_mid_font_size"
+            android:paddingLeft="@dimen/comm_margin_size_20"
+            android:textColor="@color/ocr_black_text"
+            android:text="姓名"
+            android:gravity="center_vertical"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/ocr_identity_info_name"
+            android:layout_weight="2"
+            android:background="@color/ocr_white"
+            android:textSize="@dimen/comm_normal_mid_font_size"
+            android:textColor="@color/ocr_black_text"
+            android:textCursorDrawable="@drawable/text_cursor_shape"
+            android:text="张三"
+            android:gravity="center_vertical"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/ocr_background_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dip" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="身份证号"
+            android:textColor="@color/ocr_black_text"
+            android:textSize="@dimen/comm_normal_mid_font_size"
+            android:paddingLeft="@dimen/comm_margin_size_20"
+            />
+
+        <EditText
+            android:id="@+id/ocr_identity_info_idcard"
+            android:layout_weight="2"
+            android:background="@color/ocr_white"
+            android:textSize="@dimen/comm_normal_mid_font_size"
+            android:textColor="@color/ocr_black_text"
+            android:textCursorDrawable="@drawable/text_cursor_shape"
+            android:text="327537199006157365"
+            android:gravity="center_vertical"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/ocr_background_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dip" />
+
+</LinearLayout>

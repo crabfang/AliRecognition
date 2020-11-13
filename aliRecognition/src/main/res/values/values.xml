@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="ocr_background_gray">#F6F6F6</color>
+    <color name="ocr_black_text">#000000</color>
+    <color name="ocr_gray_line">#D8D8D8</color>
+    <color name="ocr_gray_text">#888888</color>
+    <color name="ocr_orange">#FF6A00</color>
+    <color name="ocr_white">#FFFFFF</color>
+    <color name="toyger_circle_background">#FFFFFF</color>
+    <color name="toyger_circle_gradient_color_end">#D23C21</color>
+    <color name="toyger_circle_gradient_color_start">#FFAF60</color>
+    <color name="toyger_circle_pattern_border">#108EE9</color>
+    <color name="toyger_circle_progress_background">#dfe6eb</color>
+    <color name="toyger_circle_progress_foreground">#FF6A00</color>
+    <color name="toyger_circle_top_tip">#7D333333</color>
+    <color name="toyger_message_box_color_black">#000000</color>
+    <color name="toyger_message_box_color_blue">#0000FF</color>
+    <dimen name="comm_action_bar_height">40dip</dimen>
+    <dimen name="comm_margin_size_10">10dip</dimen>
+    <dimen name="comm_margin_size_20">20dip</dimen>
+    <dimen name="comm_margin_size_30">30dip</dimen>
+    <dimen name="comm_margin_size_40">40dip</dimen>
+    <dimen name="comm_margin_size_60">60dip</dimen>
+    <dimen name="comm_margin_size_80">80dip</dimen>
+    <dimen name="comm_normal_font_size">18sp</dimen>
+    <dimen name="comm_normal_mid_font_size">20sp</dimen>
+    <dimen name="comm_normal_small_font_size">16sp</dimen>
+    <dimen name="comm_ocr_button_large_size">70dip</dimen>
+    <dimen name="comm_ocr_button_size">30dip</dimen>
+    <dimen name="comm_ocr_button_small_size">20dip</dimen>
+    <dimen name="comm_title_font_size">22sp</dimen>
+    <dimen name="fab_height">45dp</dimen>
+    <dimen name="fab_margin">12dp</dimen>
+    <dimen name="fab_width">45dp</dimen>
+    <dimen name="toyger_circle_surfaceview_height">423dip</dimen>
+    <dimen name="toyger_circle_surfaceview_width">238dip</dimen>
+    <dimen name="toyger_circle_tips_margin_top">60dip</dimen>
+    <dimen name="zoloz_back_progress_height">98dip</dimen>
+    <dimen name="zoloz_back_progress_width">98dip</dimen>
+    <dimen name="zoloz_container_height">128dp</dimen>
+    <dimen name="zoloz_container_margin_top">155dip</dimen>
+    <dimen name="zoloz_container_width">128dp</dimen>
+    <string name="bad_brightness">脸部亮一点</string>
+    <string name="bad_eye_openness">请注视屏幕</string>
+    <string name="bad_pitch">请正对手机</string>
+    <string name="bad_quality">请露出正脸</string>
+    <string name="bad_yaw">请正对手机</string>
+    <string name="blink_openness">眨眨眼</string>
+    <string name="distance_too_close">离远一点</string>
+    <string name="distance_too_far">靠近一点</string>
+    <string name="face_comm_tips_text">拿起手机，眨眨眼</string>
+    <string name="face_init_text">请正对屏幕</string>
+    <string name="face_not_in_center">把脸移入圈内</string>
+    <string name="is_blur">再清晰一点</string>
+    <string name="is_moving">再清晰一点</string>
+    <string name="message_box_btn_cancel_tip">取消</string>
+    <string name="message_box_btn_confirm">确定</string>
+    <string name="message_box_btn_exit">退出</string>
+    <string name="message_box_btn_i_know">我知道了</string>
+    <string name="message_box_btn_ok_tip">确定</string>
+    <string name="message_box_btn_retry_exit">退出</string>
+    <string name="message_box_btn_retry_ok">再试一次</string>
+    <string name="message_box_message_btn_retry_ok_time_out">我知道了</string>
+    <string name="message_box_message_exit_tip">露个脸就能通过</string>
+    <string name="message_box_message_network">请检查网络</string>
+    <string name="message_box_message_not_support">刷脸仅在高版本及以上系统可用</string>
+    <string name="message_box_message_operation_fail">本次操作失败</string>
+    <string name="message_box_message_operation_time_out">提示：正对手机,更容易成功</string>
+    <string name="message_box_message_retry_face_scan">提示：正对手机，更容易成功</string>
+    <string name="message_box_message_retry_face_scan_time_out">刷脸失败次数过多，请稍后再试</string>
+    <string name="message_box_message_sys_error">抱歉，系统出错了，请再试一次</string>
+    <string name="message_box_message_verify">正对手机,更容易成功</string>
+    <string name="message_box_title_exit_tip">确定退出吗?</string>
+    <string name="message_box_title_network">网络不给力</string>
+    <string name="message_box_title_not_support">当前系统不支持刷脸</string>
+    <string name="message_box_title_operation_fail">验证中断</string>
+    <string name="message_box_title_operation_time_out">操作超时</string>
+    <string name="message_box_title_retry_face_scan">操作超时</string>
+    <string name="message_box_title_retry_face_scan_time_out">本次操作失败</string>
+    <string name="message_box_title_sys_error">本次操作失败</string>
+    <string name="message_box_title_verify">刷脸失败</string>
+    <string name="no_face">没有检测到脸</string>
+    <string name="ocr_bottom_tips_back">证件国徽面</string>
+    <string name="ocr_bottom_tips_front">证件人像面</string>
+    <string name="ocr_take_photo_back_tips">拍摄身份证国徽面</string>
+    <string name="ocr_take_photo_front_tips">拍摄身份证人像面</string>
+    <string name="ocr_top_tips_back">拍摄国徽面</string>
+    <string name="ocr_top_tips_front">拍摄人像面</string>
+    <string name="stack_time">请保持不动</string>
+    <string name="topText_do_photinus">进行闪屏检测</string>
+    <string name="yunceng_appkey">L_gG_ui6kYalM7C1EPEk7PvGIJFZECnuxWCibcnJZ5ok7Gnb9Y+DDL3JELEG_z9TEaiqT9Lfvt4DxZgoxxNtPqprQ01G81s8JEtApZjpapmhlvMmS9-7JxmyRjopMVaaIahtfaksRBQ33tnqDJCtsn2kWLli2U5_JBFiJruI3UEWTRwzvuFQLaupffStfTvcP7OKCRzXoafZyvkhbom9a67I+tD8MB7+Jlo_2gG0xSyfgFg6ASvIi+_-vWnQyPz03-vveQTZ0BFLO9DNkrO5qNHR8GtyeEwzL-KLT5qd+lXh3+-OfbH7GvFGHKMRSYjvM_EF6ZD0fUNyfOMnyYAr1EsAOuEPaZaoNNNui3+ZYABNTyog0rPG4_1rqV6VyQ2AaIXNQfzoAYuLx00Dnp6T9LR</string>
+    <string name="zface_processing">正在处理</string>
+    <style name="OcrAppTheme" parent="android:Theme.Light.NoTitleBar">
+    </style>
+    <style name="ToygerAppTheme" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <declare-styleable name="CircleHoleView">
+        <attr format="dimension" name="holeLeft"/>
+        <attr format="boolean" name="holeHCenter"/>
+        <attr format="boolean" name="holeVCenter"/>
+        <attr format="dimension" name="holeTop"/>
+        <attr format="dimension" name="holeWidth"/>
+        <attr format="dimension" name="holeHeight"/>
+    </declare-styleable>
+    <declare-styleable name="RectMaskView">
+        <attr format="dimension" name="rectLeft"/>
+        <attr format="dimension" name="rectTop"/>
+        <attr format="dimension" name="rectWidth"/>
+        <attr format="dimension" name="rectHeight"/>
+
+        <attr format="boolean" name="rectHCenter"/>
+        <attr format="boolean" name="rectVCenter"/>
+    </declare-styleable>
+    <declare-styleable name="zface_round_progressBar">
+        <attr format="color" name="zface_round_color"/>
+        <attr format="color" name="zface_round_progress_color"/>
+        <attr format="dimension" name="zface_round_width"/>
+        <attr format="color" name="zface_text_color"/>
+        <attr format="dimension" name="zface_text_size"/>
+        <attr format="integer" name="zface_max"/>
+        <attr format="integer" name="zface_start_angle"/>
+        <attr format="integer" name="zface_background_color"/>
+        <attr format="integer" name="zface_end_angle"/>
+        <attr format="dimension" name="zface_color_bg_width"/>
+        <attr format="boolean" name="zface_text_is_displayable"/>
+        <attr format="boolean" name="zface_progress_shader"/>
+        <attr format="color" name="zface_gradient_color_start"/>
+        <attr format="color" name="zface_gradient_color_end"/>
+        <attr name="zface_style">
+            <enum name="ZFACE_STROKE" value="0"/>
+            <enum name="ZFACE_FILL" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

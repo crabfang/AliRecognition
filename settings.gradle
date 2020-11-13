@@ -1,0 +1,3 @@
+include ':aliRecognition'
+include ':app'
+rootProject.name = "AliRecognition"
