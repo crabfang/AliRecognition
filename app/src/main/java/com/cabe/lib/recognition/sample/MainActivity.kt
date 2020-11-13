@@ -1,4 +1,4 @@
-package com.cabe.lib.recognition
+package com.cabe.lib.recognition.sample
 
 import android.os.Bundle
 import android.util.Log
