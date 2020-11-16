@@ -40,6 +40,6 @@ android {
 
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
-    api "com.alibaba:fastjson:1.2.5"
-    api "com.squareup.okhttp3:okhttp:3.12.0"
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.alibaba:fastjson:1.2.62'
 }
