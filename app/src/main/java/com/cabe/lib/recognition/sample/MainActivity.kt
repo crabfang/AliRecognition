@@ -26,7 +26,7 @@ class MainActivity: AppCompatActivity() {
     }
 
     fun actionVerify(view: View) {
-        ZIMFacadeBuilder.create(this).verify("", true) {
+        ZIMFacadeBuilder.create(this).verify("6f89d803bf7d1d575c217436a0020081", true) {
             Log.w(TAG, "verify: ${JSONObject.toJSONString(it)}")
             true
         }
